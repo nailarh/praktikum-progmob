@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Grenie</string>
+    <string name="nama_tanaman">Nama Tanaman</string>
+    <string name="masukkan_nama_tanaman">Masukkan nama tanaman</string>
+    <string name="deskripsi_tanaman">Deskripsi Tanaman</string>
+    <string name="masukkan_deskripsi">Masukkan Deskripsi</string>
+    <string name="temperatur_yang_diperlukan">Temperatur yang Diperlukan</string>
+    <string name="cara_merawat_tanaman">Cara Merawat Tanaman</string>
+    <string name="masukkan_cara_merawat_tanaman">Masukkan cara merawat tanaman</string>
+    <string name="jenis_tanaman">Jenis Tanaman</string>
+    <string name="data">Data yang dimasukkan sudah benar</string>
+    <string name="submit">Submit</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>
+

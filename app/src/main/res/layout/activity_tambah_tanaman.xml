@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tambah_tanaman"
+    tools:context=".TambahTanamanActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:background="#0000"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:onClick="backButton"/>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCardView"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardElevation="30dp"
+        card_view:contentPadding="4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tambah_tanaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Tambah Tanaman"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_masukkangambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tambah_tanaman"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="Masukkan Gambar"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/gambar1"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/tv_masukkangambar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/upload_gambar" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/gambar1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:text="Gallery"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="@string/nama_tanaman"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/tv_nama"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_rounded"
+                    android:ems="10"
+
+                    android:hint="@string/masukkan_nama_tanaman"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="15dp"
+
+                    android:paddingRight="15dp"
+                    android:textColorHint="@color/colorGrey"
+                    tools:ignore="AutoFill" />
+
+                <TextView
+                    android:id="@+id/tv_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_nama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="@string/deskripsi_tanaman"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/tv_deskripsi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_rounded"
+                    android:ems="10"
+
+                    android:hint="@string/masukkan_deskripsi"
+                    android:inputType="textMultiLine"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="15dp"
+
+                    android:paddingRight="15dp"
+                    android:textColorHint="@color/colorGrey"
+                    tools:ignore="AutoFill" />
+
+                <TextView
+                    android:id="@+id/tv_temperatur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_deskripsi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="@string/temperatur_yang_diperlukan"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/seekBarValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_temperatur"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="0"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seekBarValue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="13dp"
+                    android:max="40"
+                    android:min="0" />
+
+                <TextView
+                    android:id="@+id/tv_caramerawat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/seekBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="@string/cara_merawat_tanaman"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_caramerawat"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/tv_caramerawat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_rounded"
+                    android:ems="10"
+
+                    android:hint="@string/masukkan_cara_merawat_tanaman"
+                    android:inputType="textMultiLine"
+                    android:letterSpacing="0.1"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColorHint="@color/colorGrey"
+                    tools:ignore="AutoFill" />
+
+                <TextView
+                    android:id="@+id/tv_jenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_caramerawat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:text="@string/jenis_tanaman"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/jenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_jenis"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/hias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:text="Hias" />
+
+                    <RadioButton
+                        android:id="@+id/herbal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:text="Herbal" />
+
+                    <RadioButton
+                        android:id="@+id/bunga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:text="Bunga" />
+
+                    <RadioButton
+                        android:id="@+id/buah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:text="Buah" />
+
+                    <RadioButton
+                        android:id="@+id/sayur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:text="Sayur" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jenis"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="15dp"
+                    android:text="Data yang dimasukkan sudah benar"
+
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

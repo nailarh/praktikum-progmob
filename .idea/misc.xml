@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Grenie/app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Grenie/app/src/main/res/drawable/ic_add.xml" value="0.21614583333333334" />
+        <entry key="..\:/Grenie/app/src/main/res/drawable/ic_save.xml" value="0.10885416666666667" />
+        <entry key="..\:/Grenie/app/src/main/res/layout-v26/activity_main.xml" value="0.1" />
+        <entry key="..\:/Grenie/app/src/main/res/layout-v26/content_main.xml" value="0.184375" />
+        <entry key="..\:/Grenie/app/src/main/res/layout-v26/row_data.xml" value="0.1" />
+        <entry key="..\:/Grenie/app/src/main/res/layout-v26/view_data.xml" value="0.1" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_edit_tanaman.xml" value="0.2" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_list_tanaman.xml" value="0.1" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_tambah_tanaman.xml" value="0.16" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_tampil_tanaman.xml" value="0.1" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_up_del.xml" value="0.1" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/activity_update_delete.xml" value="0.1213768115942029" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/content_main.xml" value="0.18" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/row_data.xml" value="0.17527173913043478" />
+        <entry key="..\:/Grenie/app/src/main/res/layout/view_data.xml" value="0.22" />
+        <entry key="..\:/Grenie/app/src/main/res/menu/add_menu.xml" value="0.22" />
+        <entry key="..\:/Grenie/app/src/main/res/menu/menu_main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

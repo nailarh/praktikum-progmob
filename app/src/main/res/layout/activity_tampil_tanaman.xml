@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".TampilTanamanActivity"
+    android:background="@drawable/tampil_tanaman">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:background="#0000"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:onClick="backButton"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo">
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="30dp"
+                app:cardElevation="50dp"
+                app:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail_tanaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:text="Detail Tanaman"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/gambar"
+                        android:layout_width="220dp"
+                        android:layout_height="180dp"
+                        android:layout_below="@+id/detail_tanaman"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="23dp"
+                        android:background="@drawable/upload_gambar" />
+
+                    <TextView
+                        android:id="@+id/t_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gambar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Nama Tanaman"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_nama"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:text="Nama Tanaman"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t_deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nama"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Deskripsi"
+                        android:letterSpacing="0.1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_deskripsi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:text="Deskripsi"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t_temperatur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deskripsi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Temperatur"
+                        android:letterSpacing="0.1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/temperatur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_temperatur"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:text="Temperatur"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t_cara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/temperatur"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Cara Merawat"
+                        android:letterSpacing="0.1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_cara"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:text="Cara Merawat"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/t_jenis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cara"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Jenis Tanaman"
+                        android:letterSpacing="0.1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jenis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_jenis"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Jenis Tanaman"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/jenis"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="230dp"
+                        android:background="@drawable/button_rounded"
+                        android:text="Kembali"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
